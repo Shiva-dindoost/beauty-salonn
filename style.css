@@ -19,7 +19,9 @@ header {
 .navbar {
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* padding: 10px; */
     justify-content: center;
     background-color: beige;
 
@@ -32,6 +34,7 @@ p.logo {
 
 li {
     list-style-type: none;
+    margin: 10px;
 
 }
 
@@ -52,17 +55,18 @@ li {
 
 .left-side-intro {
 
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 250px;
+    /* position: relative; */
 
 }
 
 .header-right-side-btn {
     width: 150px;
     padding: 10px 15px;
-    border: 5px solid  rgb(179, 130, 125);
-    background-color: rgb(250, 244,244);
-    color:  rgb(179, 130, 125);
+    border: 5px solid rgb(179, 130, 125);
+    background-color: rgb(250, 244, 244);
+    color: rgb(179, 130, 125);
 }
 
 .header-left-side-btn {
@@ -72,4 +76,46 @@ li {
     border: none;
     color: white;
 
+}
+
+.btn-container {
+    right: 40%;
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-side {
+        justify-content: center;
+    }
+
+    .photo {
+        width: 250px;
+        height: 300px;
+    }
+
+    .left-side-intro {
+        margin: 40px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .btn-container {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .header-right-side-btn,
+    .header-left-side-btn {
+        width: 80%;
+        margin: 10px 0;
+    }
 }

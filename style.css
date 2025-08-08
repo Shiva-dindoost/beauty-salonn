@@ -3,11 +3,16 @@
     padding: 0%;
     direction: rtl;
 }
-
+/* body{
+    background-image: url(photo/background.png);
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+} */
 header {
     height: 700px;
     width: 100%;
-    background-color: rgb(233, 140, 177);
+    /* background-color: rgb(233, 140, 177); */
 }
 
 .top-bar {
@@ -61,19 +66,43 @@ li {
 
 }
 
-.header-right-side-btn {
+.services {
     width: 150px;
     padding: 10px 15px;
     border: 5px solid rgb(179, 130, 125);
-    background-color: rgb(250, 244, 244);
+    background-color: rgba(250, 244, 244,0.3);
     color: rgb(179, 130, 125);
+     text-decoration: none;
+/* 
+    padding: 12px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease; */
+
+
+
 }
 
-.header-left-side-btn {
+.services:hover {
+    /* transform: translateY(-4px) scale(1.03); /* انگار میاد جلو و کمی بالا می‌ره */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    background: rgba(179, 130, 125, 0.15);
+}
+
+.education {
     width: 100px;
     padding: 15px 15px;
-    background-color: rgb(179, 130, 125);
-    border: none;
+    background-color: rgba(179, 130, 125,0.3);
+    text-decoration: none;
     color: white;
 
 }
@@ -113,8 +142,8 @@ li {
         margin-top: 20px;
     }
 
-    .header-right-side-btn,
-    .header-left-side-btn {
+    .services,
+    .education {
         width: 80%;
         margin: 10px 0;
     }
